@@ -4,8 +4,6 @@ $(document).ready(function () {
     var nameInput = $("#name-input");
     var typeChoice = $("#type-input");
     var colorChoice = $("#color-input");
-    var tempChoice = $("#temp-input");
-    var waterProofCheck = $("#waterProof-input");
     var typeSort = $("#type-sort");
     var colorSort = $("#color-sort");
     var weatherSort = $("#weather-sort");
@@ -35,47 +33,41 @@ $(document).ready(function () {
     
     addClotheForm.on("submit", function (event) {
         event.preventDefault();
-        var userID = JSON.parse(localStorage.getItem("userID"));
-        console.log("Page loaded with userID: ", userID);
+        var InsertName = JSON.parse(localStorage.getItem("InsertName"));
+        console.log("Page loaded with InsertName: ", InsertName);
         console.log("boop");
         
         
         var clothes = {
-            //add in userID
+            //add in insertName
             name: nameInput.val(),
             type: typeChoice.val(),
             color: colorChoice.val(),
-            temp: tempChoice.val(),
-            waterProof: waterProofCheck.val(),
-            userId: userID
+            insertName: InsertName
         };
         console.log(clothes)
-        if (!clothes.name || !clothes.type || !clothes.color || !clothes.temp || !clothes.waterProof) {
+        if (!clothes.name || !clothes.type || !clothes.color) {
             return;
         }
         console.log("made it past")
         
         // // If we have all the clothing info run the createClothing function
-        createClothing(clothes.name,clothes.type,clothes.color,clothes.temp,clothes.waterProof, clothes.userId);
+        createClothing(clothes.name,clothes.type,clothes.color, clothes.insertName);
         nameInput.val("");
         typeChoice.val("");
         colorChoice.val("");
-        tempChoice.val("");
-        waterProofCheck.val("");
-        userID.val("");
-        console.log("Cleared userID: ", userID);
+        InsertName.val("");
+        console.log("Cleared insertName: ", insertName);
         
     });
     
-    function createClothing(name, type, color, temp, waterProof, userId) {
+    function createClothing(name, type, color, waterProof, insertName) {
         console.log("Inside post request")
         $.post("/api/closet", {
            name,
            type,
            color,
-           temp,
-           waterProof,
-           userId
+           insertName
         })
             .then(function (data) {
                 console.log(data);
