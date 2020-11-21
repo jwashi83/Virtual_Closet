@@ -2,10 +2,10 @@
 An App to build out your own virtual closet and have an outfit picked for you from your clothes based on the current weather forecast. Uses mySQL, Express, Materialize, Handlebars, and a clientside handlebars function named BrowserBars.
 I plan to utilize the website to allow users to search and try on clothes based on their most shopped brands without leaving their home. The website will also have a seasonal feature to it that will allow people to post their ideas based on the seasons and help inspire others.
 Sprint 2:
-Step 1
-Step 2
-Step 3
-Step 4
-Step 5
-Step 6
+Step 1: I changed the variable and renamed the file to poset in the models folder of posets.js file. The reason I changed it is to align with the theme of my project and ensure the website now says Poset instead of Closets.
+Step 2: I went into the User.js and changed “userID” to “insertName” because the website is more of public social platform rather than something that’s private. I want people to be able to have access to anyone’s closet based on knowing their name.
+Step 3: I changed the public folder by deleting and renaming a few variables to fit my overall goal of Poset along with removing temp & waterproof because it didn’t fit my overall plan for the Poset website. While I believe it to be a good idea, I didn’t want the website that detailed in choosing a clothing style based on the weather. Also, I  changed UserID to insertname to match my change from my previous folder.
+Step 4: I went into the style.css folder and I changed the font family’s from Mclaren to Times new Roman to give the page a cleaner and more professional look to it. I also changed the color from black to blue to give it a cooler feeling on the site. In addition, I changed the background color to white to go along with the blue font.
+Step 5: I changed the login.js by deleting the password segment because I want the platform to be a public platform instead of password protected.
+Step 6: I changed the signup folder to rename everything with virtual closet to Poset to match my project title as well as renamnig and rewording a few other items that mentions the previous users idea. Also, I deleted the password segment here as well to align with the changed made on the login
 Done
