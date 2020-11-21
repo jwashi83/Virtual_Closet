@@ -1,9 +1,9 @@
 /* login and signup */
 .brand-logo  {
-  font-family: 'McLaren', cursive;
+  font-family: 'Times New Roman', cursive;
   font-size: 5em;
   width: 100%;
-  color: #103332;
+  color: #66ccff;
 }
 
 .container {
@@ -14,8 +14,8 @@
 .loginTo {
   font-size: 2em;
   text-align: center;
-  font-family: 'McLaren', cursive;
-  color: #103332;
+  font-family: 'Times New Roman', cursive;
+  color: #66ccff;
 }
 
 .login, .signup {
@@ -23,15 +23,15 @@
 }
 
 .input-field label {
-  font-family: 'McLaren', cursive;
-  color: #103332;
+  font-family: 'Times New Roman', cursive;
+  color: #66ccff;
   /* font-weight: lighter; */
 }
 
 label {
   font-size: 1em;
-  color: #103332;
-  font-family: 'Raleway', sans-serif;
+  color: #66ccff;
+  font-family: sans-serif;
   font-weight: bolder;
 }
 
@@ -88,7 +88,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
   padding: 2%;
   width: 30%;
   height: 7vh;
-  font-family: 'McLaren', cursive;
+  font-family: 'Times New Roman', cursive;
 }
 
 .btn:hover {
@@ -112,14 +112,14 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 0 3%;
-  background-color: #B2D2F5;
+  background-color: #ffffff;
 }
 
 .header {
-  font-family: 'McLaren', cursive;
+  font-family: 'Times New Roman', cursive;
   font-size: 5em;
   width: 100%;
-  color: #103332;
+  color: #66ccff;
   text-align: center;
 }
 
@@ -141,18 +141,18 @@ body {
 }
 
 .select-wrapper input.select-dropdown {
-  color: #103332 !important;
-  font-family: 'Raleway', sans-serif;
+  color: #66ccff !important;
+  font-family: sans-serif;
 }
 
 
 .dropdown-content li>span {
-  color: #103332 !important;
-  font-family: 'Raleway', sans-serif;
+  color: #66ccff !important;
+  font-family: sans-serif;
 }
 
 .select-wrapper input.select-dropdown:focus {
-  border-bottom: 1px solid #103332;
+  border-bottom: 1px solid #66ccff;
 }
 
 .addBtn {
@@ -163,7 +163,7 @@ body {
   font-size: 1.5em;
   width: 80%;
   height: 10vh;
-  font-family: 'McLaren', cursive;
+  font-family: 'Times New Roman', cursive;
 }
 
 
@@ -175,14 +175,14 @@ body {
 
 .closetHead {
   text-align: center;
-  color: #103332;
-  font-family: 'McLaren', cursive;
+  color: #66ccff;
+  font-family: 'Times New Roman', cursive;
   font-size: 3em;
 }
 
 
 .tableHead {
-  font-family: 'McLaren', cursive;
+  font-family: 'Times New Roman', cursive;
 }
 
 .all {
@@ -191,7 +191,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   font-size: 1.25em;
-  color: #103332;
+  color: #66ccff;
 }
 
 th, td {
@@ -212,8 +212,8 @@ th {
 
 .sorting {
   text-align: center;
-  font-family: 'McLaren', cursive;
-  color: #103332;
+  font-family: 'Times New Roman', cursive;
+  color: #66ccff;
 }
 
 
