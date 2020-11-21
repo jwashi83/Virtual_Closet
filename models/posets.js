@@ -21,23 +21,13 @@ module.exports = function(sequelize, DataTypes) {
             len: [1]
         }
       },
-      temp: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      waterProof: {
-          type: DataTypes.BOOLEAN,
-          allowNull: false,
-          defaultValue: false
-      }
-    },
     {
       timestamps: false
     });
 
-    // WIll also add userId to Closet model
+    // WIll also add insertName to Poset model
     Poset.associate = function (models) {
-      models.Closets.belongsTo(models.User, {
+      models.Poset.belongsTo(models.User, {
         foreignKey: 'userId'
       })
     }
