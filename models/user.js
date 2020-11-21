@@ -33,7 +33,7 @@ module.exports = function (sequelize, DataTypes) {
 
   // Will add userId to Closet model
   User.associate = function(models) {
-    User.hasMany(models.Closets, {foreignKey: 'userId',
+    User.hasMany(models.Poset, {foreignKey: 'InsertName',
      onDelete: "cascade"
     });
   };
