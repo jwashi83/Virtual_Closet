@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Closets = sequelize.define("Closets", {
+    var Poset = sequelize.define("Poset", {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -36,11 +36,11 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     // WIll also add userId to Closet model
-    Closets.associate = function (models) {
+    Poset.associate = function (models) {
       models.Closets.belongsTo(models.User, {
         foreignKey: 'userId'
       })
     }
   
-    return Closets;
+    return Poset;
   };
